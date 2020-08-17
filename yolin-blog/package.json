@@ -1,0 +1,42 @@
+{
+  "name": "yolin-blog",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd-mobile": "^2.3.3",
+    "lib-flexible": "^0.3.2",
+    "node-sass": "^4.14.1",
+    "postcss-aspect-ratio-mini": "^1.1.0",
+    "postcss-px2rem": "^0.3.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.0.1",
+    "sass-loader": "^8.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "postcss-loader": "^3.0.0",
+    "px2rem-loader": "^0.1.9"
+  }
+}
