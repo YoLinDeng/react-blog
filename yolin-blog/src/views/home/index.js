@@ -1,5 +1,6 @@
-import './Home.scss'
+import './index.scss'
 import React, { Component }  from 'react';
+
 class Home extends Component {
   constructor(props) {
     super(props)
@@ -10,8 +11,7 @@ class Home extends Component {
   render() {
     return(
       <div className="home-wrapper">
-        <div className="title1">hello~ {this.state.name}</div>
-        <div className="desc">这里是首页!</div>
+        首页
       </div>
     )
   }
