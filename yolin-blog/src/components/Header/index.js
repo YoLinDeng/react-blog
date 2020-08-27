@@ -19,8 +19,10 @@ class Header extends Component {
   }
   componentDidMount = () => {
     let moren = this.props.location.pathname
+    let text = moren.substring(moren.lastIndexOf('/') + 1, moren.length)
+    !['home', 'study', 'type', 'label', 'about', 'search'].includes(text) && (text = 'home')
     this.setState({
-      current: moren.substring(moren.lastIndexOf('/') + 1, moren.length)
+      current: text
     })
     history.listen((event) => {
       let test = event.pathname

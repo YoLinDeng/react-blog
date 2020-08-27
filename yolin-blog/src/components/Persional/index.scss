@@ -1,0 +1,45 @@
+$aWidth: 128px;
+$aHeight: 128px;
+@mixin centerPosition {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.persional-wrapper {
+  height: 100vh;
+  .top-bg {
+    height: 180px;
+    background: #4d4d4d;
+    position: relative;
+    .avatar-container {
+      width: $aWidth;
+      height: $aHeight;
+      border-radius: 50%;
+      background: #88acdb;
+      position: absolute;
+      border: 5px solid #fff;
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      overflow: hidden;
+      .avatar-icon {
+        width: $aWidth;
+        height: $aHeight;
+        @include centerPosition;
+        transform: rotate(0deg);
+        &:hover {
+          transform: rotate(360deg);
+          transition: all 2s;
+        }
+      }
+    }
+  }
+  .info-container {
+  }
+}
