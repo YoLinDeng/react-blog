@@ -1,4 +1,9 @@
 import React, { Component }  from 'react';
+import {
+  EnvironmentOutlined,
+  IdcardOutlined,
+  LaptopOutlined
+} from '@ant-design/icons';
 import './index.scss'
 class Persional extends Component {
   constructor(props) {
@@ -18,7 +23,23 @@ class Persional extends Component {
         </div>
         <div className="info-container">
           <div className="name">{ this.state.name }</div>
-            <div className="sign">{ this.state.sign }</div>
+          <div className="sign">{ this.state.sign }</div>
+          <div className="detail-info">
+            <div className="address item">
+              <EnvironmentOutlined className="address-icon"/>
+              <span className="text">广东广州</span>
+            </div>
+            <div className="school item">
+              <IdcardOutlined className="school-icon"/>
+              <span className="text">广东药科大学（GDPU）</span>
+            </div>
+            <div className="profession item">
+              <LaptopOutlined className="profession-icon"/>
+              <span className="text">前端工程师</span>
+            </div>
+          </div>
+        </div>
+        <div className="link-container">
         </div>
       </div>
     )

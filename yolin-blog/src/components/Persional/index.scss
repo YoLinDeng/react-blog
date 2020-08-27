@@ -41,5 +41,28 @@ $aHeight: 128px;
     }
   }
   .info-container {
+    text-align: center;
+    margin-top: 80px;
+    .name {
+      font-size: 28px;
+      font-weight: 600;
+      color: #333;
+    }
+    .sign {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+    .detail-info {
+      padding-left: 80px;
+      text-align: left;
+      margin-top: 20px;
+      .item {
+        margin: 5px 0;
+        .text {
+          margin-left: 5px;
+        }
+      }
+    }
   }
 }
