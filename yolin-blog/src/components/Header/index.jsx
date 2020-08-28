@@ -59,9 +59,6 @@ class Header extends Component {
               </Menu.Item>
             </Menu>
           </Col>
-          <Col span={6} pull={18} className="left-box">
-            <strong className="logo-name">Deng</strong>
-          </Col>
         </Row>
       </div>
     )

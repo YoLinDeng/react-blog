@@ -10,7 +10,24 @@ class Persional extends Component {
     super(props)
     this.state = {
       name: 'YoLinDeng',
-      sign: '等到秋叶终于金黄，等到华发悄然苍苍~'
+      sign: '等到秋叶终于金黄，等到华发悄然苍苍~',
+      linkList: [
+        {
+          icon: require('@/assets/images/github.png'),
+          link: 'https://github.com/YoLinDeng',
+          title: 'github'
+        },
+        {
+          icon: require('@/assets/images/touch-icon.png'),
+          link: 'https://segmentfault.com/u/yolindeng',
+          title: 'segmentfault'
+        },
+        {
+          icon: require('@/assets/images/juejin-icon.png'),
+          link: 'https://juejin.im/user/1574156383565319',
+          title: 'juejin'
+        }
+      ]
     }
   }
   render() {
@@ -40,6 +57,17 @@ class Persional extends Component {
           </div>
         </div>
         <div className="link-container">
+          {
+            this.state.linkList.map((item, index) => {
+              return (
+                <div className="link-item" key={index}>
+                  <a href={item.link} title={item.title}>
+                    <img src={item.icon} alt="icon" className="icon"/>
+                  </a>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
     )

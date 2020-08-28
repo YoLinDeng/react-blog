@@ -16,20 +16,22 @@ class App extends Component {
       <div className="App" >
         <Layout>
           <Sider>
-            <Persional />
+            <Persional/>
           </Sider>
           <Content>
             <Router>
               <Header />
-              <Switch>
-                <Route path="/home" exact component={Home}></Route>
-                <Route path="/study" component={Study}></Route>
-                <Route path="/type" component={Type}></Route>
-                <Route path="/label" component={Label}></Route>
-                <Route path="/about" component={About}></Route>
-                <Redirect from="/*" to="/home"></Redirect>
-              </Switch>
-              <Footer>Footer</Footer>
+              <div className="main">
+                <Switch>
+                  <Route path="/home" exact component={Home}></Route>
+                  <Route path="/study" component={Study}></Route>
+                  <Route path="/type" component={Type}></Route>
+                  <Route path="/label" component={Label}></Route>
+                  <Route path="/about" component={About}></Route>
+                  <Redirect from="/*" to="/home"></Redirect>
+                </Switch>
+                <Footer>Footer</Footer>
+              </div>
             </Router>
           </Content> 
         </Layout>

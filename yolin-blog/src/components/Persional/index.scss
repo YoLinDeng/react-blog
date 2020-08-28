@@ -56,11 +56,27 @@ $aHeight: 128px;
     .detail-info {
       padding-left: 80px;
       text-align: left;
-      margin-top: 20px;
+      margin-top: 30px;
       .item {
         margin: 5px 0;
         .text {
           margin-left: 5px;
+        }
+      }
+    }
+  }
+  .link-container {
+    margin-top: 30px;
+    text-align: center;
+    .link-item {
+      display: inline-block;
+      margin: 0 15px;
+      a {
+        text-decoration: none !important;
+        outline: none;
+        .icon {
+          width: 25px;
+          height: 25px;
         }
       }
     }

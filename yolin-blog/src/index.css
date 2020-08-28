@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -23,4 +24,8 @@ code {
   min-width: 300px !important;
   height: 100vh;
   background: #fff;
+}
+.ant-layout-content .main{
+  background: #eaeaea;
+  height: 2000px;
 }
