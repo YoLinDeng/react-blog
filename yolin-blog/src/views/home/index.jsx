@@ -1,8 +1,8 @@
 import './index.scss'
-import React, { Component }  from 'react';
+import React, { Component }  from 'react'
+import CodeBlock from "@/components/CodeBlock";
 import ReactMarkdown from 'react-markdown'
-
-const input = '# This is a header\n\nAnd this is a paragraph'
+import apiMd from "@/assets/md/api.md"
 
 class Home extends Component {
   constructor(props) {
@@ -11,7 +11,8 @@ class Home extends Component {
       name: 'YoLinDeng',
       articleList: [
         {
-          title: ''
+          title: 'egg.js+mongoose实现二级评论',
+          detail: '',
         }
       ]
     }
@@ -19,7 +20,14 @@ class Home extends Component {
   render() {
     return(
       <div className="home-wrapper">
-        <ReactMarkdown source={input} />,
+        {apiMd}
+        <ReactMarkdown
+          source={apiMd}
+          escapeHtml={true}
+          renderers={{
+            code: CodeBlock
+          }}
+        />
       </div>
     )
   }
