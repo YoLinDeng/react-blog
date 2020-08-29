@@ -25,7 +25,10 @@ code {
   height: 100vh;
   background: #fff;
 }
+.ant-layout-content {
+  overflow-y: auto;
+  height: 100vh;
+}
 .ant-layout-content .main{
   background: #eaeaea;
-  height: 2000px;
 }

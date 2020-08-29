@@ -1,9 +1,5 @@
 import './index.scss'
 import React, { Component }  from 'react'
-import CodeBlock from "@/components/CodeBlock";
-import ReactMarkdown from 'react-markdown'
-import apiMd from "@/assets/md/api.md"
-
 class Home extends Component {
   constructor(props) {
     super(props)
@@ -20,14 +16,6 @@ class Home extends Component {
   render() {
     return(
       <div className="home-wrapper">
-        {apiMd}
-        <ReactMarkdown
-          source={apiMd}
-          escapeHtml={true}
-          renderers={{
-            code: CodeBlock
-          }}
-        />
       </div>
     )
   }
