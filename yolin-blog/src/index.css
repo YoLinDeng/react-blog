@@ -31,4 +31,6 @@ code {
 }
 .ant-layout-content .main{
   background: #eaeaea;
+  padding-top: 10px;
+  margin-top: 50px;
 }

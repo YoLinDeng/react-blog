@@ -1,0 +1,61 @@
+.home-wrapper {
+  .article-item {
+    width: 90%;
+    margin: 10px auto;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    .top {
+      position: relative;
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        &:hover {
+          transition: all 250ms;
+          color: #007bff;
+        }
+      }
+      .time-box {
+        color: grey;
+        margin: 5px 0;
+        .text {
+          margin-left: 5px;
+        }
+      }
+    }
+    .center-box {
+      margin-top: 10px;
+      border-top: 1px solid #ccc;
+      padding: 10px 0;
+      .desc {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+        &:hover {
+          transition: all 250ms;
+          color: #007bff;
+        }
+      }
+    }
+    .footer-box {
+      .container {
+        margin: 10px 0;
+        .title {
+          color: #718096;
+        }
+        .icon {
+          margin-right: 5px;
+        }
+        .item {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .pagination-box {
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+  }
+}
