@@ -26,11 +26,26 @@ code {
   background: #fff;
 }
 .ant-layout-content {
-  overflow-y: auto;
+  overflow-y: auto; 
   height: 100vh;
 }
 .ant-layout-content .main{
   background: #eaeaea;
   padding-top: 10px;
   margin-top: 50px;
+}
+.ant-layout-footer {
+  background: #eaeaea;
+}
+.ant-layout-footer .copyright { 
+  display: inline-block;
+  text-shadow: 0 1px #fff;
+  font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
+  font-size: 12px;
+}
+.ant-layout-footer .blog-desc { 
+  float: right;
+  text-shadow: 0 1px #fff;
+  font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
+  font-size: 12px;
 }

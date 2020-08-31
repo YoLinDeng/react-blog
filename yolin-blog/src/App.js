@@ -30,7 +30,14 @@ class App extends Component {
                   <Route path="/about" component={About}></Route>
                   <Redirect from="/*" to="/home"></Redirect>
                 </Switch>
-                <Footer>Footer</Footer>
+                <Footer>
+                  <div className="copyright">
+                    © 2018 YoLinDeng
+                  </div>
+                  <div className="blog-desc">
+                    the blog by YoLinDeng
+                  </div>
+    	          </Footer>
               </div>
             </Router>
           </Content> 
