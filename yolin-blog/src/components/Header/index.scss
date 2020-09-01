@@ -1,7 +1,6 @@
 .header-wrapper {
   box-shadow: 5px 0 10px #ccc;
-  padding: 0 100px;
-  width: 80vw;
+  width: 85vw;
   position: fixed;
   top: 0;
   background: #fff;
@@ -10,5 +9,8 @@
     .ant-menu-horizontal {
       text-align: right;
     }
+  }
+  .ant-row {
+    padding-right: 100px;
   }
 }

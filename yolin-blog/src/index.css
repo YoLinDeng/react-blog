@@ -15,7 +15,7 @@ code {
     monospace;
 }
 .ant-layout {
-  background: #fff;
+  background: #eaeaea;
 }
 .ant-layout-sider {
   width: 300px !important;
@@ -30,7 +30,6 @@ code {
   height: 100vh;
 }
 .ant-layout-content .main{
-  background: #eaeaea;
   padding-top: 10px;
   margin-top: 50px;
 }
