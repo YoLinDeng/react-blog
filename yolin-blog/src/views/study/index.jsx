@@ -6,42 +6,42 @@ class Study extends Component {
     this.state = {
       docList: [
         {
-          image: require('@/assets/images/vue-logo.png'),
+          image: require('@/assets/images/study/vue-logo.png'),
           url: 'https://cn.vuejs.org/',
           title: 'vue.js'
         },
         {
-          image: require('@/assets/images/vue-logo.png'),
-          url: 'https://cn.vuejs.org/',
-          title: 'vue.js'
+          image: require('@/assets/images/study/react-logo.png'),
+          url: 'https://react.docschina.org/',
+          title: 'react.js'
         },
         {
-          image: require('@/assets/images/vue-logo.png'),
-          url: 'https://cn.vuejs.org/',
-          title: 'vue.js'
+          image: require('@/assets/images/study/es6-logo.png'),
+          url: 'https://es6.ruanyifeng.com/',
+          title: 'es6(阮一峰)'
         },
         {
-          image: require('@/assets/images/vue-logo.png'),
-          url: 'https://cn.vuejs.org/',
-          title: 'vue.js'
+          image: require('@/assets/images/study/egg-logo.png'),
+          url: 'https://eggjs.org/zh-cn/',
+          title: 'egg.js'
         },
         {
-          image: require('@/assets/images/vue-logo.png'),
-          url: 'https://cn.vuejs.org/',
-          title: 'vue.js'
+          image: require('@/assets/images/study/mongoose-logo.png'),
+          url: 'https://mongoosejs.com/docs/guide.html',
+          title: 'mongoose'
         },
         {
-          image: require('@/assets/images/vue-logo.png'),
-          url: 'https://cn.vuejs.org/',
-          title: 'vue.js'
+          image: require('@/assets/images/study/typeScript-logo.png'),
+          url: 'https://typescript.bootcss.com/',
+          title: 'typeScript'
         },
         {
-          image: require('@/assets/images/vue-logo.png'),
+          image: require('@/assets/images/study/vue-logo.png'),
           url: 'https://cn.vuejs.org/',
-          title: 'vue.js'
+          title: 'Lodash'
         },
         {
-          image: require('@/assets/images/vue-logo.png'),
+          image: require('@/assets/images/study/vue-logo.png'),
           url: 'https://cn.vuejs.org/',
           title: 'vue.js'
         }
@@ -56,7 +56,7 @@ class Study extends Component {
     return (
       <div className="study-wrapper">
         <div className="doc-list">
-          <p className="top-title">常用文档</p>
+          <p className="top-title">常用框架（库）文档</p>
           {
             this.state.docList.map((item,index) => {
               return(

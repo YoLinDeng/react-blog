@@ -82,8 +82,6 @@
     ]
   },
   "devDependencies": {
-    "postcss-loader": "^3.0.0",
-    "px2rem-loader": "^0.1.9"
   },
   "jest": {
     "collectCoverageFrom": [
