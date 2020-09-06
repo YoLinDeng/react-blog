@@ -18,7 +18,7 @@ class Persional extends Component {
           title: 'github'
         },
         {
-          icon: require('@/assets/images/touch-icon.png'),
+          icon: require('@/assets/images/sifou-icon.png'),
           link: 'https://segmentfault.com/u/yolindeng',
           title: 'segmentfault'
         },

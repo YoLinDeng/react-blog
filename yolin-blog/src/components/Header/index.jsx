@@ -45,11 +45,11 @@ class Header extends Component {
               <Menu.Item key="study" icon={<FolderOpenOutlined />}>
                 <Link to="/study">学习</Link>
               </Menu.Item>
-              <Menu.Item key="type" icon={<AppstoreOutlined />}>
-                <Link to="/type">分类</Link>
+              <Menu.Item key="archives" icon={<PushpinOutlined />}>
+                <Link to="/archives">归档</Link>
               </Menu.Item>
-              <Menu.Item key="label" icon={<PushpinOutlined />}>
-                <Link to="/label">标签</Link>
+              <Menu.Item key="photos" icon={<AppstoreOutlined />}>
+                <Link to="/photos">相册</Link>
               </Menu.Item>
               <Menu.Item key="about" icon={<UserOutlined />}>
                 <Link to="/about">关于</Link>

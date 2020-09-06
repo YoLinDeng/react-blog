@@ -1,14 +1,16 @@
 .study-wrapper {
   padding: 30px;
-  .doc-list {
+  .list-container {
     background: #fff;
     border-radius: 5px;
     padding: 19px;
+    margin-bottom: 20px;
     .top-title {
-      font-size: 30px;
-      font-weight: 600;
-      color: #333;
+      font-size: 26px;
+      color: #828d95;
       margin-left: 20px;
+      border-left: 3px solid #736efe;
+      padding-left: 15px;
     }
     .list-item {
       width: 120px;

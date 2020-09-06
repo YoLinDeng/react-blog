@@ -1,6 +1,6 @@
 import './index.scss'
 import React, { Component } from 'react';
-class Type extends Component {
+class Photos extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -8,11 +8,11 @@ class Type extends Component {
   }
   render() {
     return(
-      <div className="type-wrapper">
-        分类
+      <div className="photos-wrapper">
+        相册
       </div>
     )
   }
 }
 
-export default Type
+export default Photos

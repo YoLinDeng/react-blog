@@ -1,18 +1,18 @@
 import './index.scss';
 import React, { Component } from 'react';
 
-class Label extends Component {
+class Archives extends Component {
   constructor(props) {
     super(props);
     this.state = {}
   }
   render() {
     return(
-      <div className="label-wrapper">
-        标签
+      <div className="archives-wrapper">
+        归档
       </div>
     )
   }
 }
 
-export default Label
+export default Archives
