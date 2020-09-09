@@ -10,6 +10,7 @@ class Home extends Component {
       name: 'YoLinDeng',
       articleList: [
         {
+          id: 1,
           title: 'egg.js+mongoose实现二级评论',
           desc: '关于egg.js+mongoose实现二级评论的描述，egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论',
           time: '2020-8-30',
@@ -17,6 +18,7 @@ class Home extends Component {
           label: 'vue,react,eggg,ts'
         },
         {
+          id: 2,
           title: 'egg.js+mongoose实现二级评论',
           desc: 'egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论',
           time: '2020-8-30',
@@ -32,6 +34,9 @@ class Home extends Component {
   onChangePagination(page, pageSize) {
     console.log(page, pageSize)
   }
+  goToArticle(id) {
+    console.log(id)
+  }
   render() {
     return(
       <div className="home-wrapper">
@@ -40,16 +45,16 @@ class Home extends Component {
             return(
               <div className="article-item" key={index}>
                 <div className="top">
-                  <a className="title" href="/article/detail">{item.title}</a>
+                  <div className="title" onClick={this.goToArticle(item.id)}>{item.title}</div>
                   <div className="time-box">
                   <ClockCircleOutlined />
                   <span className="text">{item.time}</span>
                   </div>
                 </div>
                 <div className="center-box">
-                  <a className="desc" href="/article/detail">
+                  <div className="desc" onClick={this.goToArticle(item.id)}>
                     {item.desc}
-                  </a>
+                  </div>
                 </div>
                 <div className="footer-box">
                   <div className="container">

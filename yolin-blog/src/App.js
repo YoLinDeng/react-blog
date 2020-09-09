@@ -4,6 +4,7 @@ import Study from '@/views/study'
 import Photos from '@/views/photos'
 import Archives from '@/views/archives'
 import About from '@/views/about'
+import Article from '@/views/article'
 import { Layout } from 'antd'
 import Header from '@/components/Header'
 import Persional from '@/components/Persional'
@@ -28,6 +29,7 @@ class App extends Component {
                   <Route path="/photos" component={Photos}></Route>
                   <Route path="/archives" component={Archives}></Route>
                   <Route path="/about" component={About}></Route>
+                  <Route path="/article:id" component={Article}></Route>
                   <Redirect from="/*" to="/home"></Redirect>
                 </Switch>
                 <Footer>
