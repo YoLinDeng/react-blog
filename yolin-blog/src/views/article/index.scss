@@ -1,0 +1,16 @@
+.article-wrapper {
+  .container {
+    width: 80%;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    padding: 20px;
+    box-sizing: border-box;
+    .article-title {
+      font-size: 26px;
+      font-weight: 600;
+      color: #333;
+    }
+  }
+}

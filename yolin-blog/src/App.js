@@ -23,15 +23,17 @@ class App extends Component {
             <Router>
               <Header />
               <div className="main">
-                <Switch>
-                  <Route path="/home" exact component={Home}></Route>
-                  <Route path="/study" component={Study}></Route>
-                  <Route path="/photos" component={Photos}></Route>
-                  <Route path="/archives" component={Archives}></Route>
-                  <Route path="/about" component={About}></Route>
-                  <Route path="/article:id" component={Article}></Route>
-                  <Redirect from="/*" to="/home"></Redirect>
-                </Switch>
+                <div className="router-view">
+                  <Switch>
+                    <Route path="/home" exact component={Home}></Route>
+                    <Route path="/study" component={Study}></Route>
+                    <Route path="/photos" component={Photos}></Route>
+                    <Route path="/archives" component={Archives}></Route>
+                    <Route path="/about" component={About}></Route>
+                    <Route path="/article/:id" component={Article}></Route>
+                    <Redirect from="/*" to="/home"></Redirect>
+                  </Switch>
+                </div>
                 <Footer>
                   <div className="copyright">
                     © 2020 YoLinDeng

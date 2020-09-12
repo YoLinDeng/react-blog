@@ -49,6 +49,7 @@
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",
@@ -81,8 +82,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",

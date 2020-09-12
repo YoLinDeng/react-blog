@@ -1,7 +1,7 @@
 import './index.scss'
 import React, { Component }  from 'react'
-import { Tag, Pagination  } from 'antd';
-import { ClockCircleOutlined, AppstoreOutlined, TagOutlined } from '@ant-design/icons';
+import { Tag, Pagination, Button } from 'antd';
+import { ClockCircleOutlined, AppstoreOutlined, TagOutlined, RedoOutlined } from '@ant-design/icons';
 
 class Home extends Component {
   constructor(props) {
@@ -13,7 +13,8 @@ class Home extends Component {
           id: 1,
           title: 'egg.js+mongoose实现二级评论',
           desc: '关于egg.js+mongoose实现二级评论的描述，egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论',
-          time: '2020-8-30',
+          createTime: '2020-8-30',
+          updateTime: '2020-9-1',
           type: '前端,后端,移动端',
           label: 'vue,react,eggg,ts'
         },
@@ -21,11 +22,12 @@ class Home extends Component {
           id: 2,
           title: 'egg.js+mongoose实现二级评论',
           desc: 'egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论egg.js+mongoose实现二级评论',
-          time: '2020-8-30',
+          createTime: '2020-8-30',
+          updateTime: '2020-9-1',
           type: '前端,后端,移动端',
           label: 'vue,react,eggg,ts,js'
         }
-      ],
+      ]
     }
   }
   splitString(str) {
@@ -35,7 +37,7 @@ class Home extends Component {
     console.log(page, pageSize)
   }
   goToArticle(id) {
-    console.log(id)
+    this.props.history.push(`/article/${id}`)
   }
   render() {
     return(
@@ -45,14 +47,16 @@ class Home extends Component {
             return(
               <div className="article-item" key={index}>
                 <div className="top">
-                  <div className="title" onClick={this.goToArticle(item.id)}>{item.title}</div>
+                  <div className="title" onClick={this.goToArticle.bind(this, item.id)}>{item.title}</div>
                   <div className="time-box">
-                  <ClockCircleOutlined />
-                  <span className="text">{item.time}</span>
+                    <ClockCircleOutlined />
+                    <span className="text">{item.createTime}</span>
+                    <RedoOutlined className="update-icon"/>
+                    <span className="text">{item.updateTime}</span>
                   </div>
                 </div>
                 <div className="center-box">
-                  <div className="desc" onClick={this.goToArticle(item.id)}>
+                  <div className="desc" onClick={this.goToArticle.bind(this, item.id)}>
                     {item.desc}
                   </div>
                 </div>
@@ -82,6 +86,11 @@ class Home extends Component {
                         )
                       })
                     }
+                  </div>
+                  <div className="footer-right-box">
+                    <span className="read text">阅读（100）</span>
+                    <span className="comment text">评论（10）</span>
+                    <Button type="primary" className="read-btn" onClick={this.goToArticle.bind(this, item.id)}>阅读全文</Button>
                   </div>
                 </div>
               </div>
