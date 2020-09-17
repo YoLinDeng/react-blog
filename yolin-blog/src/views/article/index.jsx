@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import store from '@/store'
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import './index.scss';
 
 class Article extends Component {
@@ -15,11 +16,19 @@ class Article extends Component {
   }
   render() {
     return(
-      <div className="article-wrapper">
-        <div className="container">
-          <div className="article-title">{this.state.articleTitle}</div>
+      <ReactCSSTransitionGroup
+        transitionName="animation1"
+        transitionAppear={true} 
+        transitionAppearTimeout={300}
+        transitionEnterTimeout={300}
+        transitionLeaveTimeout={300}
+      >
+        <div className="article-wrapper">
+          <div className="container">
+            <div className="article-title">{this.state.articleTitle}</div>
+          </div>
         </div>
-      </div>
+    </ReactCSSTransitionGroup>
     )
   }
 }

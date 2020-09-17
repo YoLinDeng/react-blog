@@ -1,5 +1,6 @@
 import './index.scss'
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 class Study extends Component {
   constructor(props) {
     super(props);
@@ -94,27 +95,34 @@ class Study extends Component {
   }
   render() {
     return (
-      <div className="study-wrapper">
-        {
-          this.state.studyList.map((sItem, sIndex) => {
-            return(
-              <div className="list-container" key={sIndex}>
-                <p className="top-title">{sItem.title}</p>
-                {
-                  sItem.list.map((item, index) => {
-                    return(
-                      <div className="list-item" key={index} onClick={() => this.goToDoc(item.url)}>
-                        <img src={item.image} alt="" className="item-image"/>
-                        <div className="item-title">{item.title}</div>
-                      </div>
-                    )
-                  })
-                }
-              </div>
-            )
-          })
-        }
-      </div>
+      <ReactCSSTransitionGroup
+        transitionName="animation1"
+        transitionAppear={true} 
+        transitionAppearTimeout={300}
+        transitionEnterTimeout={300}
+        transitionLeaveTimeout={300}>
+        <div className="study-wrapper">
+          {
+            this.state.studyList.map((sItem, sIndex) => {
+              return(
+                <div className="list-container" key={sIndex}>
+                  <p className="top-title">{sItem.title}</p>
+                  {
+                    sItem.list.map((item, index) => {
+                      return(
+                        <div className="list-item" key={index} onClick={() => this.goToDoc(item.url)}>
+                          <img src={item.image} alt="" className="item-image"/>
+                          <div className="item-title">{item.title}</div>
+                        </div>
+                      )
+                    })
+                  }
+                </div>
+              )
+            })
+          }
+        </div>
+      </ReactCSSTransitionGroup>
     )
   }
 }
