@@ -1,9 +1,12 @@
 import { Spin } from 'antd';
 import React, { Component }  from 'react';
+import './index.scss'
 class Loading extends Component {
   render() {
     return(
-      <Spin />
+      <div className="loading-wrapper">
+        <Spin className="loading-icon"/>
+      </div>
     )
   }
 }
