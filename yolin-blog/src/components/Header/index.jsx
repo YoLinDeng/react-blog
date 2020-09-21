@@ -21,7 +21,7 @@ class Header extends Component {
   componentWillMount = () => {
     let moren = this.props.location.pathname
     let text = moren.substring(moren.lastIndexOf('/') + 1, moren.length)
-    !['home', 'study', 'photos', 'archives', 'about'].includes(text) && (text = 'home')
+    !['study', 'photos', 'archives', 'about'].includes(text) && (text = 'home')
     store.dispatch({type: 'change', current: text})
     history.listen((event) => {
       let test = event.pathname
@@ -37,7 +37,7 @@ class Header extends Component {
           <Col span={18} push={6} className="right-box">
             <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
               <Menu.Item key="home" icon={<HomeOutlined />}>
-                <Link to="/home">首页</Link>
+                <Link to="/">首页</Link>
               </Menu.Item>
               <Menu.Item key="study" icon={<FolderOpenOutlined />}>
                 <Link to="/study">学习</Link>
