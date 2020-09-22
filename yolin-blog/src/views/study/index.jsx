@@ -2,8 +2,8 @@ import './index.scss'
 import React, { Component } from 'react';
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 class Study extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       studyList: [
         {

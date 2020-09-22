@@ -2,8 +2,8 @@ import './index.scss'
 import React, { Component }  from 'react';
 
 class About extends Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
       name: 'YoLinDeng'
     }

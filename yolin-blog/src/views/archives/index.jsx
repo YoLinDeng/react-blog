@@ -2,8 +2,8 @@ import './index.scss';
 import React, { Component } from 'react';
 
 class Archives extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {}
   }
   render() {

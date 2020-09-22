@@ -4,8 +4,8 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import './index.scss';
 
 class Article extends Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
       articleTitle: 'vue中微信JSAPI与外部H5支付相关实现过程及常见问题'
     }

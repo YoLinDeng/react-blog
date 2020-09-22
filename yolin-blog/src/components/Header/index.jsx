@@ -8,8 +8,8 @@ import { createBrowserHistory } from 'history';
 const history = createBrowserHistory() // history模式
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       logo: '',
       current: 'home'
